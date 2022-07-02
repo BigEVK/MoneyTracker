@@ -28,20 +28,20 @@ Keeping up with daily spending is not easy, but is a necessary part of life in o
 
 ## Tech Stack
 
-- What languages is it written with: 
+- What languages is it written with: HTML, CSS, JavaScript
 
-- What libraries are used: 
+- What libraries are used: (not Bootstrap)
 
 - Other: 
 
 
 ## APIs
 
--
+- The app contacts the user's bank account to update the app with the account balance.
 
 ## MVP (Minimum Viable Product)
 
--
+- Ability to enter expenses and income by date and have a runnning total of available funds.
 
 
 ## Stretch Goals
