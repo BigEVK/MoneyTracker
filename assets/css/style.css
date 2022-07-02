@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    
+}
+header {
+    background: #669966;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+h1 {
+    text-align: center;
+}
+
+.lineItemOne {
+    display: flex;    
+    /* box-sizing: content-box; */
+    align-content: stretch;
+    width: 100%;
+}
+.date .desc .incExp .amount .balance {
+    display: block;
+    
+    background: #669966;
+}
+#container {
+    background: #669966;
+    border-radius: 2px;
+    padding: 10px
+}
+.desc {
+    width: 50%;
+}
