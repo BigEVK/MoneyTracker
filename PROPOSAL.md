@@ -37,7 +37,7 @@ Keeping up with daily spending is not easy, but is a necessary part of life in o
 
 ## APIs
 
-- The app contacts the user's bank account to update the app with the account balance.
+- Plaid, Yodle. The app contacts the user's bank account to update the app with the account balance.
 
 ## MVP (Minimum Viable Product)
 
