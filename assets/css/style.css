@@ -13,6 +13,18 @@ header {
 h1 {
     text-align: center;
 }
+.bigBox {
+    display: flex;    
+    align-items: flex-end;
+}
+.littleBox {    
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: baseline; */
+    box-sizing: content-box;
+    width: 100%
+
+}
 
 .lineItemOne {
     display: flex;    
@@ -22,14 +34,33 @@ h1 {
 }
 .date .desc .incExp .amount .balance {
     display: block;
-    
     background: #669966;
 }
 #container {
-    background: #669966;
-    border-radius: 2px;
-    padding: 10px
+    background: #669999;
+    border-radius: 3px;
+    padding: 10px;
+    border: .5px solid black;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 .desc {
-    width: 50%;
+    flex: 1;
+    
+    /* width: 55%; */
 }
+textarea {
+    width: 55%;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+input[type=number] {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* .amount {
+    content: "$";
+} */
