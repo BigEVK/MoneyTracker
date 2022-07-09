@@ -54,7 +54,7 @@ h1 {
     background: #669966;
 }
 
-#container {
+.container {
     background: #669999;
     border-radius: 3px;
     padding: 10px;
