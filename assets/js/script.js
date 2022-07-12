@@ -1,5 +1,7 @@
 document.querySelector("button").addEventListener("click", money);
 
+
+
 // --- adding event to press 'enter' and update balance as substitution for above ----
 
 // const input = document.getElementById("balance");
@@ -92,11 +94,17 @@ function money() {
       ledgerFour.placeholder = "amount"
       ledger.appendChild(ledgerFour);
 
-      let ledgerFive = document.createElement("input");
-      ledgerFive.classList.add("container");
-      ledgerFive.setAttribute("readonly", "text");
+
+// ---- The Blance box at the end of the Ledger is being removed and the total will now be in the "littleBox" -----
+
+    //   let ledgerFive = document.createElement("input");
+    //   ledgerFive.classList.add("container");
+    //   ledgerFive.setAttribute("readonly", "text");
+      
+    
+    
       // ledgerFive.innerHTML = "Balance"
-      ledger.appendChild(ledgerFive);
+    //   ledger.appendChild(ledgerFive);
 
 
       // dateIdCounter++;
@@ -115,10 +123,20 @@ function money() {
     addExpense();
 };
 
-// function newBal() {
+// ---- Create a function to add/subtract income/expense ----
+const parseNumber = function(value) {
+    value = parseFloat(value);
+    if (isNaN(value)) {
+        value = 0;
+    }
+    return value;
+}
+var balanceInput = $("#amnt");
+const balance = parseNumber(balanceInput.val());
+$()
+    
 
 
-// }
 
 function addExpense(){
 
@@ -157,8 +175,8 @@ function getBalance(){
         
     }
     document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
-    localStorage.getItem("ledger", ledger);
-    console.log(balance[1]);
+    localStorage.getItem("balance", balance);
+    // console.log(balance[1]);
 }
 
 function addToBalance(){
