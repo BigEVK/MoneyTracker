@@ -21,7 +21,7 @@ document.querySelector("button").addEventListener("click", money);
 
 // ---- None of the above worked so I have added an 'Update Balance' button in its stead ---
 
-const ledgerIdCounter = 0;
+let ledgerIdCounter = 0;
 
 function money() {
    var date = document.getElementById("date").value;
@@ -46,12 +46,12 @@ function money() {
       alert("Please enter the amount of the transaction");
    }
    else {
-      const ledger = document.createElement("div");
+      let ledger = document.createElement("div");
       ledger.classList.add("lineItemOne");
       ledger.setAttribute("data-ledger-id", ledgerIdCounter);
-      console.log(ledger);
+      // console.log(ledger);
 
-      const ledgerOne = document.createElement("input");      
+      let ledgerOne = document.createElement("input");      
       ledgerOne.classList.add("container"); 
        
       // ---This sets the date container --- why is it not sized correctly?? --- 
@@ -63,13 +63,13 @@ function money() {
 
       ledger.appendChild(ledgerOne);
 
-      const ledgerTwo = document.createElement("input");
+      let ledgerTwo = document.createElement("input");
       ledgerTwo.classList.add("container");
       ledgerTwo.setAttribute("type", "text");
       ledgerTwo.placeholder = "description"
       ledger.appendChild(ledgerTwo);
 
-      const ledgerThree = document.createElement("select");
+      let ledgerThree = document.createElement("select");
       ledgerThree.classList.add("container");
       ledgerThree.class = "incExp";
       // ledgerThree.setAttribute("type", "option");
@@ -87,12 +87,12 @@ function money() {
 
 
 
-      const ledgerFour = document.createElement("input");
+      let ledgerFour = document.createElement("input");
       ledgerFour.classList.add("container");
       ledgerFour.placeholder = "amount"
       ledger.appendChild(ledgerFour);
 
-      const ledgerFive = document.createElement("input");
+      let ledgerFive = document.createElement("input");
       ledgerFive.classList.add("container");
       ledgerFive.setAttribute("readonly", "text");
       // ledgerFive.innerHTML = "Balance"
@@ -110,7 +110,7 @@ function money() {
       ledgerIdCounter++;
    };
 
-   saveLedger();
+   // saveLedger();
 
 };
 
@@ -119,7 +119,59 @@ function newBal() {
 
 }
 
-var saveLedger = function () {
-   localStorage.Storage.setItem("ledger", JSON.stringify(ledger));
+function addExpense(){
+
+    let purpose = document.getElementById("purpose").value;
+    let amt = document.getElementById("amount").value;
+    let day = document.getElementById("date").value;
+
+    let data = localStorage.getItem("ledger");
+    if(!data){
+        data = []
+    }else{
+        data = JSON.parse(data);
+    }
+
+    let expense = {
+        purpose: purpose,
+        amt: amt,
+        day: day
+    };
+
+    data.push(expense);
+    localStorage.setItem("ledger",JSON.stringify(data))
+
+    displayExpenses();
+
+    return false;
 }
+
+function getBalance(){
+    let balance = localStorage.getItem("balance");
+    if(!balance){
+        balance = 1000.00
+    }
+    document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
+    localStorage.setItem("balance", balance);
+}
+
+function addToBalance(){
+    let balance = prompt("Enter the amount to add to the balance: ");
+
+    if(isNaN(balance)){
+        alert("Invalid Amount")
+    }else{
+        balance = Number(balance)
+        old = Number(localStorage.getItem("balance"));
+        old += balance;
+        localStorage.setItem("balance", old);
+        getBalance();
+    }
+}
+
+getBalance();
+
+// var saveLedger = function () {
+//    localStorage.Storage.setItem("ledger", JSON.stringify(ledger));
+// }
 
