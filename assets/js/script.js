@@ -108,22 +108,25 @@ function money() {
       ledgerDataObj.id = ledgerIdCounter;
       // ledger.push(ledgerDataObj);
       ledgerIdCounter++;
+      
    };
 
    // saveLedger();
-
+    addExpense();
 };
 
-function newBal() {
+// function newBal() {
 
 
-}
+// }
 
 function addExpense(){
 
-    let purpose = document.getElementById("purpose").value;
-    let amt = document.getElementById("amount").value;
-    let day = document.getElementById("date").value;
+    let date = document.getElementById("date").value;
+    let desc = document.getElementById("desc").value;
+    let incExp = document.getElementById("incExp").value;
+    let amnt = document.getElementById("amnt").value;
+    
 
     let data = localStorage.getItem("ledger");
     if(!data){
@@ -133,15 +136,16 @@ function addExpense(){
     }
 
     let expense = {
-        purpose: purpose,
-        amt: amt,
-        day: day
+        desc,
+        amnt,
+        incExp,
+        date
     };
 
     data.push(expense);
     localStorage.setItem("ledger",JSON.stringify(data))
-
-    displayExpenses();
+   
+   //  displayExpenses();
 
     return false;
 }
@@ -150,6 +154,7 @@ function getBalance(){
     let balance = localStorage.getItem("balance");
     if(!balance){
         balance = 1000.00
+        
     }
     document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
     localStorage.setItem("balance", balance);
