@@ -151,13 +151,14 @@ function addExpense(){
 }
 
 function getBalance(){
-    let balance = localStorage.getItem("balance");
+    let balance = localStorage.getItem("ledger");
     if(!balance){
         balance = 1000.00
         
     }
     document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
-    localStorage.setItem("balance", balance);
+    localStorage.getItem("ledger", ledger);
+    console.log(balance[1]);
 }
 
 function addToBalance(){
