@@ -22,6 +22,11 @@ h1 {
     /* display: flex; */
     /* align-items: flex-end; */
 }
+.firstBox {
+    border-radius: 3px;
+    width: 10%;
+
+}
 
 .littleBox {
     /* margin-right: 10px; */

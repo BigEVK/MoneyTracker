@@ -15,6 +15,9 @@
         <div class="bigBox">
             <h1 class="page-title">Bi-Monthly Expense Tracker</h1>            
         </div>
+        <div class="firstBox">
+            <button id="updateBal" placeholder="Update Balance">Update Balance</button>
+        </div>
         <div class="littleBox">
             <input type="text" placeholder="BankBalance" />
         </div>
@@ -39,10 +42,14 @@
             <input type="text" id="amnt" class="container" placeholder="Amount" />
         </div>
         <div class="balance">
-            <button id="balance" class="container">Balance</button>
-        </div>
+            <!-- changing from <button> to <input> and adding "enter" as event handler -->
+            <!-- <button id="balance" class="container">Balance</button> -->
+                <input type="text" id="balance" class="container" readonly="" placeholder="BALANCE" />
+         </div>
     </div>
 
+
+<!-- ----I am keeping this one for comparison ----- -->
     <!-- <div class="lineItemOne">
         <div class="date">
             <input type="date" id="date" class="container" />
@@ -63,49 +70,8 @@
         <div class="balance">
             <p id="balance" class="container">Balance</p>
         </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="date" class="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="date" class="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="incExp" class="slectDrpDwn container">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="amount" class="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="balance" class="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="date" class="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="date" class="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="incExp" class="slectDrpDwn container">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="amount" class="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="balance" class="container">Balance</p>
-        </div>
     </div> -->
+    
 
 <script src="./assets/js/script.js"></script>
 
