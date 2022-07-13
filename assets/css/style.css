@@ -12,17 +12,23 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-radius: 10px;
     padding: 30px 30px;
-    background-image: url("../images/stock-backdrop.jpg");
-   
+    background-image: url("../images/financial.jpg");
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
 }
+.h2 {
+    color:aliceblue;
+}
 .headerBox {
     display: flex;
     flex-direction: column;
     
+}
+.button {
+   font-size: large; 
 }
 .bigBox {
     /* display: flex; */
@@ -67,12 +73,23 @@ h1 {
 
 .container {
     background: #669999;
+    background-image: url(../images/finbckgrnd.jpg);
+    color:aliceblue;
     border-radius: 3px;
     padding: 10px;
     border: .5px solid black;
     margin-top: 0%;
     margin-bottom: 0%;
     /* height: auto; */
+}
+.container{
+    width: 100%;
+    /* margin: 0.8px auto; */
+    text-align: center;
+}
+.container table{
+    text-align: left;
+    margin: 5px auto;
 }
 
 .desc {

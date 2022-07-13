@@ -72,35 +72,26 @@
             <p id="balance" class="container">Balance</p>
         </div>
     </div> -->
-     <!-- -->
-     <style>
-        .container{
-            width: 60%;
-            margin: 10px auto;
-            text-align: center;
-        }
-        .container table{
-            text-align: left;
-            margin: 5px auto;
-        }
-    </style>
-</head>
+   <header>
+    <h1>My Expense Tracker</h1>
+   </header>
+
 <body>
     <div class='container'>
-        <h1>Money Tracker App</h1>
+        <!-- <h1>Money Tracker</h1> -->
         <form class='input' onsubmit="return addExpense()">
             <h2>Add New Expense</h2>
             <table>
                 <tr>
-                    <td><span>Purpose: </span></td>
-                    <td><input required type="text" id='purpose' placeholder="Purpose of Purchase"></td>
+                    <td><span>Expense: </span></td>
+                    <td><input required type="text" id='purpose' placeholder="Purchase Description"></td>
                 </tr>
                 <tr>
                     <td><span>Amount Spent: </span></td>
                     <td><input required type="Number" id='amount' placeholder="Amount Spent"/></td>
                 </tr>
                 <tr>
-                    <td>Date Spent</td>
+                    <td>Date Spent:</td>
                     <td><input required type="date" id='date' placeholder="Date of the expense"/></td>
                 </tr>
                 <tr>
@@ -109,9 +100,9 @@
             </table>
         </form>
         <br>
-        <button onclick="addToBalance()">Add to Bank Balance</button>
+        <button class="button" onclick="addToBalance()">Click Here to Add Income</button>
     </div>
-    <br>
+    <!-- <br> -->
     <div class="container">
         <div id='balance'></div>
         <h1>Expenses</h1>

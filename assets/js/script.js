@@ -217,7 +217,7 @@ function addExpense(){
 function getBalance(){
     let balance = localStorage.getItem("balance");
     if(!balance){
-        balance = 1000.00
+        balance = 0
     }
     document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
     localStorage.setItem("balance", balance);
@@ -242,7 +242,7 @@ function displayExpenses(){
     }
     let remBalance = Number(localStorage.getItem("balance"));
     data = JSON.parse(data)
-    let display = "<table><tr><th>Purpose</th><th>Amount</th><th>Date Spent</th><tr>";
+    let display = "<table><tr><th>Description</th><th>Amount</th><th>Date Spent</th><tr>";
     for(let i = 0; i < data.length; i++){
         display+="<tr><td>"+data[i].purpose+"</td><td>$"+data[i].amt+"</td><td>"+data[i].day+"</td><tr>";
         remBalance-=data[i].amt;
