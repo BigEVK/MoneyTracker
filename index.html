@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<!-- <body>
     <Header>
         <div class="headerBox">
         <div class="bigBox">
@@ -26,8 +26,8 @@
 
     <div class="lineItemOne">
         <!-- <div class="date"> -->
-            <input type="date" id="date" class="container" />
-        <!-- </div> -->
+            <!-- <input type="date" id="date" class="container" />
+        </div>
         <div class="desc">
             <input type="text" id="desc" class="container" placeholder="Transaction Description" />
         </div>
@@ -41,16 +41,16 @@
         <div class="amount">
             <input type="text" id="amnt" class="container" placeholder="Amount" />
         </div>
-        <!-- remove the Balance box and have the Total in the "littleBox" -->
-        <!-- <div class="balance"> -->
-            <!-- changing from <button> to <input> and adding "enter" as event handler -->
-            <!-- <button id="balance" class="container">Balance</button> -->
-                <!-- <input type="text" id="balance" class="container" readonly="" placeholder="BALANCE" /> -->
-         <!-- </div> -->
+        remove the Balance box and have the Total in the "littleBox"
+        <div class="balance">
+            changing from <button> to <input> and adding "enter" as event handler
+            <button id="balance" class="container">Balance</button>
+                <input type="text" id="balance" class="container" readonly="" placeholder="BALANCE" />
+         </div>
     </div>
 
 
-<!-- ----I am keeping this one for comparison ----- -->
+<!- ----I am keeping this one for comparison ----- -->
     <!-- <div class="lineItemOne">
         <div class="date">
             <input type="date" id="date" class="container" />
@@ -72,8 +72,53 @@
             <p id="balance" class="container">Balance</p>
         </div>
     </div> -->
-    
+     <!-- -->
+     <style>
+        .container{
+            width: 60%;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .container table{
+            text-align: left;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>Money Tracker App</h1>
+        <form class='input' onsubmit="return addExpense()">
+            <h2>Add New Expense</h2>
+            <table>
+                <tr>
+                    <td><span>Purpose: </span></td>
+                    <td><input required type="text" id='purpose' placeholder="Purpose of Purchase"></td>
+                </tr>
+                <tr>
+                    <td><span>Amount Spent: </span></td>
+                    <td><input required type="Number" id='amount' placeholder="Amount Spent"/></td>
+                </tr>
+                <tr>
+                    <td>Date Spent</td>
+                    <td><input required type="date" id='date' placeholder="Date of the expense"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Add Expense</button></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <button onclick="addToBalance()">Add to Bank Balance</button>
+    </div>
+    <br>
+    <div class="container">
+        <div id='balance'></div>
+        <h1>Expenses</h1>
+        <div id='expenses'>
+    </div>
 
+    </div>
 <script src="./assets/js/script.js"></script>
 
 </body>
