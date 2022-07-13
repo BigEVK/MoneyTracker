@@ -219,7 +219,7 @@ function getBalance(){
     if(!balance){
         balance = 0
     }
-    document.getElementById("balance").innerHTML = "Bank Balance: $"+balance;
+    document.getElementById("balance").innerHTML = "Total Income: $"+balance;
     localStorage.setItem("balance", balance);
 }
 function addToBalance(){
