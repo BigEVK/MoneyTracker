@@ -10,165 +10,73 @@
 </head>
 
 <body>
-    <Header>
-        <div class="headerBox">
-        <div class="bigBox">
-            <h1 class="page-title">Bi-Monthly Expense Tracker</h1>            
+    <div class="Stock-Info">
+        <h3>Stock Information</h3>
+    </div>
+    <div id="stock-info">
+        <div class="floatLeft">
+            <table id="first-table">
+                <tbody>
+                    <tr>
+                        <td id="name" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td id="information" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td id="date"></td>
+                    </tr>
+                    <tr>
+                        <td id="open"></td>
+                    </tr>
+                    <tr>
+                        <td id="high"></td>
+                    </tr>
+                    <tr>
+                        <td id="low"></td>
+                    </tr>
+                    <tr>
+                        <td id="close"></td>
+                    </tr>
+                    <tr>
+                        <td id="volume"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="littleBox">
-            <input type="text" placeholder="BankBalance" />
-        </div>
-        </div>
-    </Header>
 
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Descritption" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
+        <div class="floatRight">
+            <table id="second-table">
+                <tbody>
+                    <tr>
+                        <td id="name2" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td id="information2" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td id="date2"></td>
+                    </tr>
+                    <tr>
+                        <td id="open2"></td>
+                    </tr>
+                    <tr>
+                        <td id="high2"></td>
+                    </tr>
+                    <tr>
+                        <td id="low2"></td>
+                    </tr>
+                    <tr>
+                        <td id="close2"></td>
+                    </tr>
+                    <tr>
+                        <td id="volume2"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Descritption" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-    <div class="lineItemOne">
-        <div class="date">
-            <input type="date" id="container" />
-        </div>
-        <div class="desc">
-            <input type="text" id="container" placeholder="Transaction Description" />
-        </div>
-        <div class="incExp">
-            <select id="container" class="slectDrpDwn">
-                <option value="" disabled selected>Income/Expense</option>
-                <option value="Income">Income</option>
-                <option value="Expense">Expense</option>
-            </select>
-        </div>
-        <div class="amount">
-            <input type="number" id="container" placeholder="Amount" />
-        </div>
-        <div class="balance">
-            <p id="container">Balance</p>
-        </div>
-    </div>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

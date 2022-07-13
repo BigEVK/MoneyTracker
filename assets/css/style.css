@@ -1,92 +1,59 @@
-* {
-    box-sizing: border-box;
+
+#first-table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: medium;
+    padding: 5px;
 }
 
-body {}
-
-header {
-    background: #669966;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 10px;
-    padding: 30px 30px;
+#second-table {
+    clear: both;
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: medium;
+    padding: 5px;
+    margin-left: 10px;
 }
 
-h1 {
+td {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+th {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#name,
+#information {
+    text-align: center;
+    font-weight: bold;
+}
+
+#name2,
+#information2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.floatLeft { 
+    width: 50%; 
+    float: left; 
+}
+
+.floatRight {
+    width: 50%; 
+    float: right; 
+}
+
+#stock-info { 
+    overflow: hidden; 
+}
+
+h3 {
     text-align: center;
 }
-.headerBox {
-    display: flex;
-    flex-direction: column;
-}
-.bigBox {
-    /* display: flex; */
-    /* align-items: flex-end; */
-}
-
-.littleBox {
-    /* margin-right: 10px; */
-    border-radius: 3px;
-    border: .5px solid black;
-    /* box-sizing: content-box;  */
-    width: 10%;
-    margin-left: auto;
-    /* display: flex;
-    flex-direction: row;
-    /* align-items: baseline; */
-    /* box-sizing: content-box;
-    width: 100%;
-    position: absolute;
-    top: 40px;
-    left: 560px; */
-
-}
-
-.lineItemOne {
-    display: flex;
-    /* box-sizing: content-box; */
-    align-content: stretch;
-    width: 100%;
-    height: auto;
-}
-
-.date .desc .incExp .amount .balance {
-    display: block;
-    background: #669966;
-}
-
-#container {
-    background: #669999;
-    border-radius: 3px;
-    padding: 10px;
-    border: .5px solid black;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    /* height: auto; */
-}
-
-.desc {
-    flex: 1;
-    /* height: auto; */
-    /* width: 55%; */
-}
-
-textarea {
-    width: 55%;
-}
-
-input[type=text] {
-    width: 100%;
-    height: 40px;
-    /* box-sizing: border-box; */
-
-}
-
-input[type=number] {
-    width: 100%;
-    height: 40px;
-    /* box-sizing: border-box; */
-}
-
-/* .amount {
-    content: "$";
-} */
