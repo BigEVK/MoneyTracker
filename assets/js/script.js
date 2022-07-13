@@ -124,20 +124,15 @@ function money() {
 };
 
 // ---- Create a function to add/subtract income/expense ----
-const parseNumber = function(value) {
-    value = parseFloat(value);
-    if (isNaN(value)) {
-        value = 0;
+
+var addNew = function () {
+    if (Income === true) {
+        balance + amount
     }
-    return value;
 }
-var balanceInput = $("#amnt");
-const balance = parseNumber(balanceInput.val());
-$()
-    
 
 
-
+// ------ Save Function -----------------
 function addExpense(){
 
     let date = document.getElementById("date").value;
