@@ -118,3 +118,63 @@ input[type=number] {
 /* .amount {
     content: "$";
 } */
+#first-table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: medium;
+    padding: 5px;
+}
+
+#second-table {
+    clear: both;
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: medium;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+td {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+th {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#name,
+#information {
+    text-align: center;
+    font-weight: bold;
+}
+
+#name2,
+#information2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.floatLeft { 
+    width: 50%; 
+    float: left; 
+}
+
+.floatRight {
+    width: 50%; 
+    float: right; 
+}
+
+#stock-info { 
+    overflow: hidden; 
+    background-image: url(../images/finbckgrnd.jpg);
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}
