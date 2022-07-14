@@ -4,8 +4,7 @@
 
 body {}
 
-header {
-    /* background: #669966; */
+header {    
     font-weight: 800;
     font-size: 25px;
     color:azure;
@@ -30,37 +29,22 @@ h1 {
 .button {
    font-size: large; 
 }
-.bigBox {
-    /* display: flex; */
-    /* align-items: flex-end; */
-}
+
 .firstBox {
     border-radius: 3px;
     width: 10%;
 
 }
 
-.littleBox {
-    /* margin-right: 10px; */
+.littleBox {    
     border-radius: 3px;
-    border: .5px solid black;
-    /* box-sizing: content-box;  */
+    border: .5px solid black;    
     width: 10%;
-    margin-left: auto;
-    /* display: flex;
-    flex-direction: row;
-    /* align-items: baseline; */
-    /* box-sizing: content-box;
-    width: 100%;
-    position: absolute;
-    top: 40px;
-    left: 560px; */
-
+    margin-left: auto;   
 }
 
 .lineItemOne {
-    display: flex;
-    /* box-sizing: content-box; */
+    display: flex;   
     align-content: stretch;
     width: 100%;
     height: auto;
@@ -79,12 +63,10 @@ h1 {
     padding: 10px;
     border: .5px solid black;
     margin-top: 0%;
-    margin-bottom: 0%;
-    /* height: auto; */
+    margin-bottom: 0%;    
 }
 .container{
-    width: 100%;
-    /* margin: 0.8px auto; */
+    width: 100%;    
     text-align: center;
 }
 .container table{
@@ -94,8 +76,6 @@ h1 {
 
 .desc {
     flex: 1;
-    /* height: auto; */
-    /* width: 55%; */
 }
 
 textarea {
@@ -104,20 +84,14 @@ textarea {
 
 input[type=text] {
     width: 100%;
-    height: 40px;
-    /* box-sizing: border-box; */
-
+    height: 40px;   
 }
 
 input[type=number] {
     width: 100%;
-    height: 40px;
-    /* box-sizing: border-box; */
+    height: 40px;    
 }
 
-/* .amount {
-    content: "$";
-} */
 #first-table {
     border-collapse: collapse;
     border: 2px solid rgb(100, 100, 100);
